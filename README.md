@@ -1,2 +1,2 @@
 # portfolio-website
-Third attempt at creating an online portfolio
+About me and my projects [visit](https://akins11.github.io/Portfolio/) 
