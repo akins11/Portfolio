@@ -11,11 +11,12 @@ index_page <- argon_page(
   # META -----------------------------------------------------------------------
   title = "Ayomide",
   author =  "Akinwande Ayomide",
-  favicon = "dib_fav.png",
+  # favicon = "dib_fav.png",
+  favicon = "fav_dib.png",
   
   # -------------------------------- HEADER ------------------------------------
   # Nav ------------------------------------------------------------------------
-  navbar = navbar(  #argonNavbar
+  navbar = navbar( 
     
     id = "main-navbar",
     src = "inst/images/dib_home.svg",
@@ -26,38 +27,38 @@ index_page <- argon_page(
       side = "right",
       argon_nav_item(
         name = "Home",
-        src = "#home",
-        icon = fa_icon("home", "solid")
+        src = "#home"#,
+        # icon = fa_icon("home", "solid")
       ),
       
       argon_nav_item(
         name = "About",
-        src = "#about",
-        icon = fa_icon("user", "solid")
+        src = "#about"#,
+        # icon = fa_icon("user", "solid")
       ),
       
       argon_nav_item(
         name = "Skills",
-        src = "#skill",
-        icon = fa_icon("file-lines", "solid")
+        src = "#skill"#,
+        # icon = fa_icon("file-lines", "solid")
       ),
       
       argon_nav_item(
         name = "Sevice",
-        src = "#service",
-        icon = fa_icon("briefcase", "solid")
+        src = "#service"#,
+        # icon = fa_icon("briefcase", "solid")
       ),
       
       argon_nav_item(
         name = "Portfolio",
-        src = "#portfolio",
-        icon = fa_icon("image", "solid")
+        src = "#portfolio"#,
+        # icon = fa_icon("image", "solid")
       ),
       
       argon_nav_item(
         name = "Contact",
-        src = "#contact",
-        icon = fa_icon("paper-plane", "solid")
+        src = "#contact"#,
+        # icon = fa_icon("paper-plane", "solid")
       ),
       
       htmltools::tags$li(
@@ -292,11 +293,11 @@ index_page <- argon_page(
               ),
               div(
                 class = "skill_framework",
-                badge("R-Shiny"),
+                badge("R Shiny"),
                 badge("Flexdashboards"),
                 badge("Quarto"),
-                badge("r-markdown"),
-                badge("tidymodels")
+                badge("Tidyverse"),
+                badge("Tidymodels")
               )
             ),
             
@@ -309,9 +310,9 @@ index_page <- argon_page(
               ),
               div(
                 class = "skill_framework",
-                badge("Dash"),
                 badge("Pandas"),
-                badge("Scikit-learn"),
+                badge("Dash"),
+                badge("Scikit Learn"),
                 badge("Plotly")
               )
             ),
@@ -481,7 +482,7 @@ index_page <- argon_page(
                 tags$ul(
                   class = "services__modal-services",
                   
-                  service_list_item("I perform data cleaning & validdation."),
+                  service_list_item("Data cleaning & validdation."),
                   service_list_item("Create insightful & interactive visualization"),
                   service_list_item("Diagnostic data analysis"),
                   service_list_item("Data mining"),
@@ -522,8 +523,8 @@ index_page <- argon_page(
                   class = "services__modal-services",
                   
                   service_list_item("Business insight applications"),
-                  service_list_item("Customer segmentation applications"),
-                  service_list_item("Product analysis applications")
+                  service_list_item("Customer analytics applications"),
+                  service_list_item("Product analytics applications")
                 )
               )
             )
@@ -612,8 +613,8 @@ index_page <- argon_page(
                 active = TRUE,
                 img_src = "inst/images/project_img/market-segmentation-app.png",
                 title = "Market Segmentation Analysis App",
-                tools_used = c("R", "RShiny", "Bootstrap"),
-                # tools_used = "R | RShiny | Bootstrap",
+                tools_used = c("R", "R Shiny", "Bootstrap"),
+                # tools_used = "R | R Shiny | Bootstrap",
                 description = "Performs market segmentation analysis using selected
                                cluster algorithms, summarise each cluster and also
                                create segments using different approaches.",
@@ -637,8 +638,8 @@ index_page <- argon_page(
               portfolio(
                 img_src = "inst/images/project_img/rfm-app.png",
                 title = "RFM Analysis App",
-                tools_used = c("R", "RShiny", "Bootstrap"),
-                # tools_used = "R | Rshiny | Bootstrap",
+                tools_used = c("R", "R Shiny", "Bootstrap"),
+                # tools_used = "R | R Shiny | Bootstrap",
                 description = "Performs behavior based customer segmentation 
                                using of RFM analysis, which help in distinguishing 
                                customers.",
@@ -650,11 +651,11 @@ index_page <- argon_page(
               portfolio(
                 img_src = "inst/images/project_img/conjoint-app.jpg",
                 title = "Conjoint Analysis App",
-                tools_used = c("R", "RShiny", "Formatic UI"),
+                tools_used = c("R", "R Shiny", "Formatic UI"),
                 description = "It helps market researcher to understand how 
                                consumers make trade-offs between different product 
                                attributes.",
-                # tools_used = "R | Rshiny | Formatic UI",
+                # tools_used = "R | R Shiny | Formatic UI",
                 project_src = "https://akinwandeayomide.shinyapps.io/RFM-app/",
                 code_src = "https://github.com/akins11/RFM-analysis-app"
               )
@@ -686,8 +687,8 @@ index_page <- argon_page(
               portfolio(
                 img_src = "inst/images/project_img/product-dashboard.jpg",
                 title = "Product Analysis Dashboard",
-                tools_used = c("R", "RShiny", "bootstrap"),
-                # tools_used = "R | Rshiny | bootstrap",
+                tools_used = c("R", "R Shiny", "bootstrap"),
+                # tools_used = "R | R Shiny | bootstrap",
                 description = "A detailed Report on the profitability of various 
                                products, showcasing insights and performance across 
                                specific period.",
@@ -699,8 +700,8 @@ index_page <- argon_page(
               portfolio(
                 img_src = "inst/images/project_img/regional-sales-dashboard.png",
                 title = "Sales Dashboard",
-                # tools_used = c("R", "RShiny", "bootstrap"),
-                tools_used = "R | Rshiny | bootstrap",
+                tools_used = c("R", "R Shiny", "bootstrap"),
+                # tools_used = "R | R Shiny | bootstrap",
                 description = "A visual summary of sales performance across 
                                different regions within a specific period of 
                                time.",
@@ -732,7 +733,7 @@ index_page <- argon_page(
                 active = TRUE,
                 img_src = "inst/images/project_img/pm25-chart.png",
                 title = "PM2.5 Sensor Offset Prediction",
-                tools_used = c("Python", "Pandas", "Plotnine", "Scikit-Learn"),
+                tools_used = c("Python", "Pandas", "Plotnine", "Scikit Learn"),
                 # tools_used = "Python | Pandas | Plotnine | Scikit-Learn",
                 description = "Predictions of particle matter (PM2.5) sensor offsets
                                signals using a supervised classification algorithm.",
@@ -828,6 +829,6 @@ index_page <- argon_page(
 
 argonPageTemplate(
   filename = "index", 
-  path = "C:/Users/AYOMIDE/Documents/R/Aboutme/pages", 
+  path = "C:/Users/AYOMIDE/Documents/R/Aboutme/docs", 
   index_page
 )
