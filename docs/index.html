@@ -4,7 +4,7 @@
   <meta name="description"/>
   <meta name="author" content="Akinwande Ayomide"/>
   <title>Ayomide</title>
-  <link href="inst/images/dib_fav.png" rel="icon" type="image/png"/>
+  <link href="inst/images/fav_dib.png" rel="icon" type="image/png"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
   <link href="inst/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet"/>
   <link href="inst/assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet"/>
@@ -40,37 +40,31 @@
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
               <li class="nav-item">
                 <a class="nav-link nav-link-icon edit-item" href="#home">
-                  <i class="fa-solid fa-home "></i>
                   <span class="nav__link-dark">Home</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-icon edit-item" href="#about">
-                  <i class="fa-solid fa-user "></i>
                   <span class="nav__link-dark">About</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-icon edit-item" href="#skill">
-                  <i class="fa-solid fa-file-lines "></i>
                   <span class="nav__link-dark">Skills</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-icon edit-item" href="#service">
-                  <i class="fa-solid fa-briefcase "></i>
                   <span class="nav__link-dark">Sevice</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-icon edit-item" href="#portfolio">
-                  <i class="fa-solid fa-image "></i>
                   <span class="nav__link-dark">Portfolio</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-icon edit-item" href="#contact">
-                  <i class="fa-solid fa-paper-plane "></i>
                   <span class="nav__link-dark">Contact</span>
                 </a>
               </li>
@@ -204,7 +198,7 @@
             <br/>
             <div class="row align-items-center justify-content-center">
               <div class="col-sm col-sm-12 text-center">
-                <a download="" href="inst/assets/pdf/ayomide_cv.pdf" class="btn btn-bg">
+                <a download="" href="inst/assets/pdf/ayomide-cv.pdf" class="btn btn-bg">
                   <span class="btn-inner--text">Download CV</span>
                   <span class="btn-inner--icon">
                     <i class="fa-solid fa-download "></i>
@@ -258,11 +252,11 @@
                         <span class="skill__header-text">R Language</span>
                       </div>
                       <div class="skill_framework">
-                        <span class="skill__badge">R-Shiny</span>
+                        <span class="skill__badge">R Shiny</span>
                         <span class="skill__badge">Flexdashboards</span>
                         <span class="skill__badge">Quarto</span>
-                        <span class="skill__badge">r-markdown</span>
-                        <span class="skill__badge">tidymodels</span>
+                        <span class="skill__badge">Tidyverse</span>
+                        <span class="skill__badge">Tidymodels</span>
                       </div>
                     </div>
                     <div class="skill__tool">
@@ -271,9 +265,9 @@
                         <span class="skill__header-text">Python Language</span>
                       </div>
                       <div class="skill_framework">
-                        <span class="skill__badge">Dash</span>
                         <span class="skill__badge">Pandas</span>
-                        <span class="skill__badge">Scikit-learn</span>
+                        <span class="skill__badge">Dash</span>
+                        <span class="skill__badge">Scikit Learn</span>
                         <span class="skill__badge">Plotly</span>
                       </div>
                     </div>
@@ -410,7 +404,7 @@
                             <ul class="services__modal-services">
                               <li class="services__modal-service">
                                 <i class="fa-regular fa-circle-check services__modal-content-icon"></i>
-                                <p>I perform data cleaning &amp; validdation.</p>
+                                <p>Data cleaning &amp; validdation.</p>
                               </li>
                               <li class="services__modal-service">
                                 <i class="fa-regular fa-circle-check services__modal-content-icon"></i>
@@ -474,11 +468,11 @@
                               </li>
                               <li class="services__modal-service">
                                 <i class="fa-regular fa-circle-check services__modal-content-icon"></i>
-                                <p>Customer segmentation applications</p>
+                                <p>Customer analytics applications</p>
                               </li>
                               <li class="services__modal-service">
                                 <i class="fa-regular fa-circle-check services__modal-content-icon"></i>
-                                <p>Product analysis applications</p>
+                                <p>Product analytics applications</p>
                               </li>
                             </ul>
                           </div>
@@ -621,9 +615,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R</span>
-                                        <span>RShiny</span>
-                                        <span>Bootstrap</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">R Shiny</span>
+                                          <span class="portfolio__description-badge">Bootstrap</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/Segmentation-analysis-app">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -650,9 +646,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>Python</span>
-                                        <span>Dash</span>
-                                        <span>Bootstrap</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">Python</span>
+                                          <span class="portfolio__description-badge">Dash</span>
+                                          <span class="portfolio__description-badge">Bootstrap</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/market-basket-analysis-web-app">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -680,9 +678,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R</span>
-                                        <span>RShiny</span>
-                                        <span>Bootstrap</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">R Shiny</span>
+                                          <span class="portfolio__description-badge">Bootstrap</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/RFM-analysis-app">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -710,9 +710,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R</span>
-                                        <span>RShiny</span>
-                                        <span>Formatic UI</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">R Shiny</span>
+                                          <span class="portfolio__description-badge">Formatic UI</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/RFM-analysis-app">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -766,9 +768,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R</span>
-                                        <span>Flexdashboard</span>
-                                        <span>bootstrap</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">Flexdashboard</span>
+                                          <span class="portfolio__description-badge">bootstrap</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/Hotel-management-dashboard">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -796,9 +800,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R</span>
-                                        <span>RShiny</span>
-                                        <span>bootstrap</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">R Shiny</span>
+                                          <span class="portfolio__description-badge">bootstrap</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/Product-Dashboard">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -826,7 +832,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R | Rshiny | bootstrap</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">R Shiny</span>
+                                          <span class="portfolio__description-badge">bootstrap</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/Regional-Sales-Dashboard">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -853,8 +863,10 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>Excel</span>
-                                        <span>Power BI</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">Excel</span>
+                                          <span class="portfolio__description-badge">Power BI</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/Sales-Report">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -905,10 +917,12 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>Python</span>
-                                        <span>Pandas</span>
-                                        <span>Plotnine</span>
-                                        <span>Scikit-Learn</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">Python</span>
+                                          <span class="portfolio__description-badge">Pandas</span>
+                                          <span class="portfolio__description-badge">Plotnine</span>
+                                          <span class="portfolio__description-badge">Scikit Learn</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/PM2.5-Sensor-Offset-Prediction">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -936,10 +950,12 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>R</span>
-                                        <span>dplyr</span>
-                                        <span>ggplot2</span>
-                                        <span>Tidymodel</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">R</span>
+                                          <span class="portfolio__description-badge">dplyr</span>
+                                          <span class="portfolio__description-badge">ggplot2</span>
+                                          <span class="portfolio__description-badge">Tidymodel</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/web-sales-prediction">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -990,10 +1006,12 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>Python</span>
-                                        <span>Pandas</span>
-                                        <span>Plotly</span>
-                                        <span>NLTK</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">Python</span>
+                                          <span class="portfolio__description-badge">Pandas</span>
+                                          <span class="portfolio__description-badge">Plotly</span>
+                                          <span class="portfolio__description-badge">NLTK</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/hospitality-guest-review">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -1020,9 +1038,11 @@
                                     <div class="portfolio__description-tools-git">
                                       <div class="portfolio__description-tools">
                                         <h5 class="portfolio__description-tools-title">Tools:</h5>
-                                        <span>SQL</span>
-                                        <span>MySQL</span>
-                                        <span>Quarto</span>
+                                        <div class="portfolio__description-framework">
+                                          <span class="portfolio__description-badge">SQL</span>
+                                          <span class="portfolio__description-badge">MySQL</span>
+                                          <span class="portfolio__description-badge">Quarto</span>
+                                        </div>
                                       </div>
                                       <a class="portfolio__code-link" href="https://github.com/akins11/Exploratory-analysis-using-SQL">
                                         <i class="fa-brands fa-github shadow portfolio__git-link"></i>
@@ -1077,6 +1097,9 @@
                 </li>
                 <li>
                   <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
                 </li>
               </ul>
             </div>
