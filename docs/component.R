@@ -236,7 +236,7 @@ page_path_button <- function(text, icon = NULL, page_href) {
 download_cv_button <- function() {
   htmltools::a(
     download = "",
-    href = "inst/assets/pdf/ayomide_cv.pdf",
+    href = "inst/assets/pdf/ayomide-cv.pdf",
     class = "btn btn-bg", #btn-default
     
     htmltools::span(class = "btn-inner--text", "Download CV"),
@@ -280,6 +280,9 @@ portfolio_footer <- function() {
               ),
               htmltools::tags$li(
                 htmltools::a(href = "#contact", "Contact")
+              ),
+              htmltools::tags$li(
+                htmltools::a(href = "#", "Blog")
               )
             )
           )
@@ -520,8 +523,16 @@ portfolio <- function(
           
           div(
             class = "portfolio__description-tools",
+            
             h5(class = "portfolio__description-tools-title","Tools:"),
-            lapply(seq_len(length(tools_used)), \(t) span(tools_used[t]))
+            
+            div(
+              class = "portfolio__description-framework",
+              
+              lapply(seq_len(length(tools_used)), \(t) {
+                span(class = "portfolio__description-badge", tools_used[t])
+              })
+            )
           ),
           
           htmltools::a(
