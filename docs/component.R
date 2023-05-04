@@ -282,7 +282,7 @@ portfolio_footer <- function() {
                 htmltools::a(href = "#contact", "Contact")
               ),
               htmltools::tags$li(
-                htmltools::a(href = "#", "Blog")
+                htmltools::a(href = "https://akins11.github.io/SCM/", "Blog")
               )
             )
           )
