@@ -656,8 +656,8 @@ index_page <- argon_page(
                                consumers make trade-offs between different product 
                                attributes.",
                 # tools_used = "R | R Shiny | Formatic UI",
-                project_src = "https://akinwandeayomide.shinyapps.io/RFM-app/",
-                code_src = "https://github.com/akins11/RFM-analysis-app"
+                project_src = "https://akinwandeayomide.shinyapps.io/Conjoint_Analysis_App/",
+                code_src = "https://github.com/akins11/"
               )
             )
           ),
