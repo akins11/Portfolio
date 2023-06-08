@@ -310,7 +310,7 @@ portfolio_footer <- function() {
                 ),
                 htmltools::tags$li(
                   htmltools::tags$a(
-                    href = "https://wa.me/+2348099356268/",
+                    href = "https://wa.me/+2347084792065/",
                     htmltools::tags$i(class = "fa-brands fa-whatsapp") 
                   )
                 ),
