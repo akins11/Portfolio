@@ -31,11 +31,11 @@ index_page <- argon_page(
         # icon = fa_icon("home", "solid")
       ),
       
-      argon_nav_item(
-        name = "About",
-        src = "#about"#,
-        # icon = fa_icon("user", "solid")
-      ),
+      # argon_nav_item(
+      #   name = "About",
+      #   src = "#about"#,
+      #   # icon = fa_icon("user", "solid")
+      # ),
       
       argon_nav_item(
         name = "Skills",
@@ -43,11 +43,11 @@ index_page <- argon_page(
         # icon = fa_icon("file-lines", "solid")
       ),
       
-      argon_nav_item(
-        name = "Sevice",
-        src = "#service"#,
-        # icon = fa_icon("briefcase", "solid")
-      ),
+      # argon_nav_item(
+      #   name = "Sevice",
+      #   src = "#service"#,
+      #   # icon = fa_icon("briefcase", "solid")
+      # ),
       
       argon_nav_item(
         name = "Portfolio",
@@ -158,93 +158,93 @@ index_page <- argon_page(
   ),
   
   # About ----------------------------------------------------------------------
-  section(
-    id = "about",
-    size = "md",
-    
-    argonColumn(
-      argonRow(
-        center = TRUE,
-        
-        argonColumn(
-          width = 12,
-          center = TRUE,
-          
-          h2(class = "section__title", "About Me"),
-          
-          h3(class = "section__subtitle", "My introduction")
-        )
-      ),
-      
-      argonRow(
-        argonColumn(
-          width = 6,
-          
-           p(
-             class = "about__description",
-             "I specialize in enhancing existing processes through various data tasks,
-             including data cleaning, exploratory data analysis, data visualization, 
-             data mining, and building machine learning models."
-           )
-        ),
-        
-        argonColumn(
-          width = 6,
-          
-          argonRow(
-            argonColumn(
-              width = 4,
-              
-              h5(class = "about__info-title", "01+"),
-              span(
-                class = "about__info-subtitle", 
-                "Years",
-                br(),
-                "Experience"
-              )
-            ),
-            
-            argonColumn(
-              width = 4,
-              
-              h5(class = "about__info-title", "12+"),
-              span(
-                class = "about__info-subtitle", 
-                "Completed",
-                br(),
-                "Projects"
-              )
-            ),
-            
-            argonColumn(
-              width = 4,
-              
-              h5(class = "about__info-title", "02+"),
-              span(
-                class = "about__info-subtitle last", 
-                "Internship",
-                br(),
-                "Done"
-              )
-            )
-          )
-        )
-      ),
-      
-      br(),
-      
-      argonRow(
-        center = TRUE,
-        
-        argonColumn(
-          width = 12,
-          center = TRUE,
-          
-          download_cv_button()
-        )
-      )
-    )
-  ),
+  # section(
+  #   id = "about",
+  #   size = "md",
+  #   
+  #   argonColumn(
+  #     argonRow(
+  #       center = TRUE,
+  #       
+  #       argonColumn(
+  #         width = 12,
+  #         center = TRUE,
+  #         
+  #         h2(class = "section__title", "About Me"),
+  #         
+  #         h3(class = "section__subtitle", "My introduction")
+  #       )
+  #     ),
+  #     
+  #     argonRow(
+  #       argonColumn(
+  #         width = 6,
+  #         
+  #          p(
+  #            class = "about__description",
+  #            "I specialize in enhancing existing processes through various data tasks,
+  #            including data cleaning, exploratory data analysis, data visualization, 
+  #            data mining, and building machine learning models."
+  #          )
+  #       ),
+  #       
+  #       argonColumn(
+  #         width = 6,
+  #         
+  #         argonRow(
+  #           argonColumn(
+  #             width = 4,
+  #             
+  #             h5(class = "about__info-title", "01+"),
+  #             span(
+  #               class = "about__info-subtitle", 
+  #               "Years",
+  #               br(),
+  #               "Experience"
+  #             )
+  #           ),
+  #           
+  #           argonColumn(
+  #             width = 4,
+  #             
+  #             h5(class = "about__info-title", "12+"),
+  #             span(
+  #               class = "about__info-subtitle", 
+  #               "Completed",
+  #               br(),
+  #               "Projects"
+  #             )
+  #           ),
+  #           
+  #           argonColumn(
+  #             width = 4,
+  #             
+  #             h5(class = "about__info-title", "02+"),
+  #             span(
+  #               class = "about__info-subtitle last", 
+  #               "Internship",
+  #               br(),
+  #               "Done"
+  #             )
+  #           )
+  #         )
+  #       )
+  #     ),
+  #     
+  #     br(),
+  #     
+  #     argonRow(
+  #       center = TRUE,
+  #       
+  #       argonColumn(
+  #         width = 12,
+  #         center = TRUE,
+  #         
+  #         download_cv_button()
+  #       )
+  #     )
+  #   )
+  # ),
   
   # Skills ---------------------------------------------------------------------
   section(
@@ -312,6 +312,7 @@ index_page <- argon_page(
                 class = "skill_framework",
                 badge("Pandas"),
                 badge("Dash"),
+                badge("PyShiny"),
                 badge("Scikit Learn"),
                 badge("Plotly")
               )
@@ -435,142 +436,142 @@ index_page <- argon_page(
   ),
   
   # Service --------------------------------------------------------------------
-  section(
-    id = "service",
-    size = "md",
-    
-    argonColumn(
-      argonRow(
-        center = TRUE,
-        argonColumn(
-          width = 12,
-          center = TRUE,
-          
-          h2(class = "section__title", "Service"),
-          
-          h3(class = "section__subtitle", "What i offer")
-        )
-      ),
-      
-      argonRow(
-        center = TRUE,
-        
-        argonColumn(
-          width = 4,
-          
-          serviceCard(
-            div(
-              class = "service__content",
-              
-              div(fa_icon("chart-bar", "solid", other_class = "service__icon")),
-              h4(class = "service__title", "Data Analysis"),
-              h5(class = "service__subtitle", "Solutions"),
-              modal_button("da_modal")
-            )
-          ),
-          
-          argonColumn(
-            width = 6,
-            
-            serviceModal(
-              id = "da_modal",
-              title = "Data Analytics Solution",
-              
-              div(
-                class = "services__modal-content",
-                
-                tags$ul(
-                  class = "services__modal-services",
-                  
-                  service_list_item("Data cleaning & validdation."),
-                  service_list_item("Create insightful & interactive visualization"),
-                  service_list_item("Diagnostic data analysis"),
-                  service_list_item("Data mining"),
-                  service_list_item("Data Modelling")
-                )
-              )
-            )
-          )
-        ),
-        
-        argonColumn(
-          width = 4,
-          
-          serviceCard(
-            # width = 12,
-            
-            div(
-              class = "service__content",
-              
-              div(fa_icon("cube", "solid", other_class = "service__icon")),
-              h4(class = "service__title", "Analytical App"),
-              h5(class = "service__subtitle","Development"),
-              modal_button("aa_modal")
-            )
-          ),
-          
-          argonColumn(
-            width = 6,
-            
-            serviceModal(
-              id = "aa_modal",
-              title = "Analytical web app",
-              
-              div(
-                class = "services__modal-content",
-                
-                tags$ul(
-                  class = "services__modal-services",
-                  
-                  service_list_item("Business insight applications"),
-                  service_list_item("Customer analytics applications"),
-                  service_list_item("Product analytics applications")
-                )
-              )
-            )
-          )
-        ),
-        
-        argonColumn(
-          width = 4,
-          
-          serviceCard(
-            
-            div(
-              class = "service__content",
-              
-              div(fa_icon("table-columns", "solid", other_class = "service__icon")),
-              h4(class = "service__title", "Dashboards"),
-              h5(class = "service__subtitle", "Creation"),
-              modal_button("db_modal")
-            )
-          ),
-          
-          argonColumn(
-            width = 6,
-          
-            serviceModal(
-              id = "db_modal",
-              title = "Dashboard development",
-              
-              div(
-                class = "services__modal-content",
-                
-                tags$ul(
-                  class = "services__modal-services",
-                  
-                  service_list_item("Admin dashboards"),
-                  service_list_item("Sales and marketing dashboards"),
-                  service_list_item("Operations dashboards"),
-                  service_list_item("Human resources dashboards")
-                )
-              )
-            )
-          )
-        )
-      )
-    )
-  ),
+  # section(
+  #   id = "service",
+  #   size = "md",
+  #   
+  #   argonColumn(
+  #     argonRow(
+  #       center = TRUE,
+  #       argonColumn(
+  #         width = 12,
+  #         center = TRUE,
+  #         
+  #         h2(class = "section__title", "Service"),
+  #         
+  #         h3(class = "section__subtitle", "What i offer")
+  #       )
+  #     ),
+  #     
+  #     argonRow(
+  #       center = TRUE,
+  #       
+  #       argonColumn(
+  #         width = 4,
+  #         
+  #         serviceCard(
+  #           div(
+  #             class = "service__content",
+  #             
+  #             div(fa_icon("chart-bar", "solid", other_class = "service__icon")),
+  #             h4(class = "service__title", "Data Analysis"),
+  #             h5(class = "service__subtitle", "Solutions"),
+  #             modal_button("da_modal")
+  #           )
+  #         ),
+  #         
+  #         argonColumn(
+  #           width = 6,
+  #           
+  #           serviceModal(
+  #             id = "da_modal",
+  #             title = "Data Analytics Solution",
+  #             
+  #             div(
+  #               class = "services__modal-content",
+  #               
+  #               tags$ul(
+  #                 class = "services__modal-services",
+  #                 
+  #                 service_list_item("Data cleaning & validdation."),
+  #                 service_list_item("Create insightful & interactive visualization"),
+  #                 service_list_item("Diagnostic data analysis"),
+  #                 service_list_item("Data mining"),
+  #                 service_list_item("Data Modelling")
+  #               )
+  #             )
+  #           )
+  #         )
+  #       ),
+  #       
+  #       argonColumn(
+  #         width = 4,
+  #         
+  #         serviceCard(
+  #           # width = 12,
+  #           
+  #           div(
+  #             class = "service__content",
+  #             
+  #             div(fa_icon("cube", "solid", other_class = "service__icon")),
+  #             h4(class = "service__title", "Analytical App"),
+  #             h5(class = "service__subtitle","Development"),
+  #             modal_button("aa_modal")
+  #           )
+  #         ),
+  #         
+  #         argonColumn(
+  #           width = 6,
+  #           
+  #           serviceModal(
+  #             id = "aa_modal",
+  #             title = "Analytical web app",
+  #             
+  #             div(
+  #               class = "services__modal-content",
+  #               
+  #               tags$ul(
+  #                 class = "services__modal-services",
+  #                 
+  #                 service_list_item("Business insight applications"),
+  #                 service_list_item("Customer analytics applications"),
+  #                 service_list_item("Product analytics applications")
+  #               )
+  #             )
+  #           )
+  #         )
+  #       ),
+  #       
+  #       argonColumn(
+  #         width = 4,
+  #         
+  #         serviceCard(
+  #           
+  #           div(
+  #             class = "service__content",
+  #             
+  #             div(fa_icon("table-columns", "solid", other_class = "service__icon")),
+  #             h4(class = "service__title", "Dashboards"),
+  #             h5(class = "service__subtitle", "Creation"),
+  #             modal_button("db_modal")
+  #           )
+  #         ),
+  #         
+  #         argonColumn(
+  #           width = 6,
+  #         
+  #           serviceModal(
+  #             id = "db_modal",
+  #             title = "Dashboard development",
+  #             
+  #             div(
+  #               class = "services__modal-content",
+  #               
+  #               tags$ul(
+  #                 class = "services__modal-services",
+  #                 
+  #                 service_list_item("Admin dashboards"),
+  #                 service_list_item("Sales and marketing dashboards"),
+  #                 service_list_item("Operations dashboards"),
+  #                 service_list_item("Human resources dashboards")
+  #               )
+  #             )
+  #           )
+  #         )
+  #       )
+  #     )
+  #   )
+  # ),
   
   # Portfolio ------------------------------------------------------------------
   section(
@@ -647,7 +648,6 @@ index_page <- argon_page(
                 code_src = "https://github.com/akins11/RFM-analysis-app"
               ),
               
-              
               portfolio(
                 img_src = "inst/images/project_img/conjoint-app.jpg",
                 title = "Conjoint Analysis App",
@@ -658,7 +658,21 @@ index_page <- argon_page(
                 # tools_used = "R | R Shiny | Formatic UI",
                 project_src = "https://akinwandeayomide.shinyapps.io/Conjoint_Analysis_App/",
                 code_src = "https://github.com/akins11/"
+              ),
+              # New ------------------------------------------------------------
+              portfolio(
+                img_src = "inst/images/project_img/abc-xyz.png",
+                title = "Product Classification",
+                tools_used = c("Python", "PyShiny", "Bootstrap"),
+                description = "Designed to conduct ABC, XYZ, and ABC-XYZ analyses
+                              for inventory classification. It enables businesses
+                              to categorize their inventory items based on factors
+                              such as revenue and demand.
+                              ",
+                project_src = "https://github.com/akins11/product-classification",
+                code_src = "https://github.com/akins11/product-classification"
               )
+              # ---------------------------------------------------------------|
             )
           ),
           
@@ -697,17 +711,17 @@ index_page <- argon_page(
                 code_src = "https://github.com/akins11/Product-Dashboard"
               ),
               
-              portfolio(
-                img_src = "inst/images/project_img/regional-sales-dashboard.png",
-                title = "Sales Dashboard",
-                tools_used = c("R", "R Shiny", "bootstrap"),
-                # tools_used = "R | R Shiny | bootstrap",
-                description = "A visual summary of sales performance across 
-                               different regions within a specific period of 
-                               time.",
-                project_src = "https://akinwandeayomide.shinyapps.io/regionalSalesDashboard/",
-                code_src = "https://github.com/akins11/Regional-Sales-Dashboard"
-              ),
+              # portfolio(
+              #   img_src = "inst/images/project_img/regional-sales-dashboard.png",
+              #   title = "Sales Dashboard",
+              #   tools_used = c("R", "R Shiny", "bootstrap"),
+              #   # tools_used = "R | R Shiny | bootstrap",
+              #   description = "A visual summary of sales performance across 
+              #                  different regions within a specific period of 
+              #                  time.",
+              #   project_src = "https://akinwandeayomide.shinyapps.io/regionalSalesDashboard/",
+              #   code_src = "https://github.com/akins11/Regional-Sales-Dashboard"
+              # ),
               
               portfolio(
                 img_src = "inst/images/project_img/sales-report.png",
@@ -718,7 +732,31 @@ index_page <- argon_page(
                                various regions and periods.",
                 project_src = "https://github.com/akins11/Sales-Report",
                 code_src = "https://github.com/akins11/Sales-Report"
+              ),
+              
+              # New ------------------------------------------------------------
+              # portfolio(
+              #   img_src = "inst/images/project_img/sales-report.png",
+              #   title = "Inventory Management Report",
+              #   tools_used = "Power BI",
+              #   # tools_used = "Excel | Power BI",
+              #   description = "A concise and insightful report of sales across 
+              #                  various regions and periods.",
+              #   project_src = "https://github.com/akins11/",
+              #   code_src = "https://github.com/akins11/"
+              # ),
+              
+              portfolio(
+                img_src = "inst/images/project_img/inv-dash.png",
+                title = "Inventory Mangement Dashboard",
+                tools_used = c("R", "R shiny", "Rhino"),
+                description = "The dashboard provides a comprehensive view of
+                               business inventory operations, offering variable
+                               insights into overall performance and management.",
+                project_src = "https://akins.shinyapps.io/Inventory-dashboard/",
+                code_src = "#"
               )
+              # ----------------------------------------------------------------
             )
           ),
           

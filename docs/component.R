@@ -246,6 +246,7 @@ download_cv_button <- function() {
 
 
 portfolio_footer <- function() {
+  
   htmltools::tags$footer(
     class = "footer footer__bg",
     id = "contact",
@@ -272,9 +273,9 @@ portfolio_footer <- function() {
             htmltools::tags$ul(
               class = "ts-text",
               
-              htmltools::tags$li(
-                htmltools::a(href = "#service", "Service")
-              ),
+              # htmltools::tags$li(
+              #   htmltools::a(href = "#service", "Service")
+              # ),
               htmltools::tags$li(
                 htmltools::a(href = "#portfolio", "Portfolio")
               ),
@@ -364,6 +365,7 @@ portfolio_footer <- function() {
       )
     )
   )
+  
 }
 
 
